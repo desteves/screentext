@@ -8,7 +8,7 @@ on adding folder items to this_folder after receiving added_items
 				set FileName to quoted form of FileName
 				-- screenshots are png files so we check the extension
 				if FileName ends with ".png'" then
-					set result to do shell script ("/Users/d/workspace/diana/shots/screen.sh " & FileName)
+					set result to do shell script ("/screen.sh " & FileName)
 					if result contains "Success" then
 						set alert_message to ("Converted to Screenshot to Text, View?" & return & return) as Unicode text
 						display dialog the alert_message buttons {"Yes", "No"} default button 2 with icon 1 giving up after dialog_timeout

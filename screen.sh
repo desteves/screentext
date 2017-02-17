@@ -15,7 +15,6 @@ FOLDER=$(defaults read com.apple.screencapture location)
 SCREENSHOT=${FOLDER}"$1"
 OCR_API_URL="https://api.ocr.space/Parse/Image"
 SCREENTEXT=${SCREENSHOT}".json"
-
 OCR_WEB_SVR="http://www.ocrwebservice.com/restservices/processDocument?language=english&pagerange=all&tobw=true&gettext=true&outputformat=txt"
 
 curl --silent --connect-timeout 5 --form "file=@${SCREENSHOT}" --form "apikey=${OCR_API_KEY}" ${OCR_API_URL} | /usr/local/bin/jq --ascii-output --join-output '.["ParsedResults"]?|.[0]?|.["ParsedText"]?'  > ${SCREENTEXT}
