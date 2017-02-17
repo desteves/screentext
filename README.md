@@ -17,6 +17,7 @@ Note: I'm running the shell script via applescript folder actions but it can als
 - Edit "Image - Convert to Text.scpt" to point to your shell script location! (Line 11)
 - Copy "Image - Convert to Text.scpt" to "/Library/Scripts/Folder Action Scripts"
 - Find the directory where your screenshots are saved and add the apple script folder action.
+- Create a file named `env-vars` in the same directory as the shell script. It contains your OCR_API_KEY var as `export OCR_API_KEY=YourAPIKeyGoesHere`
 
 ## Todo
 - Investigate other third party OCRs as the current OCR call doesn't seem to be as accurate..
