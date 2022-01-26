@@ -1,4 +1,6 @@
 # screentext
+
+[![Git](https://app.soluble.cloud/api/v1/public/badges/428ad563-3e4d-43f8-903d-3afb27742287.svg?orgId=679096383598)](https://app.soluble.cloud/repos/details/github.com/desteves/screentext?orgId=679096383598)  
 An easy way to extract text from screenshots via OCR. 
 
 Every time you take a screenshot, it gets send to an OCR and the parsed results are saved as ORIGINAL_FILENAME.json in the same directory
